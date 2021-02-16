@@ -1,0 +1,119 @@
+/*
+     _/_/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/   _/
+      _/      _/  _/          _/          _/      _/  _/      _/  _/  _/
+     _/      _/  _/_/_/      _/_/_/      _/_/_/_/_/  _/_/_/_/_/  _/_/
+    _/      _/  _/          _/          _/          _/      _/  _/  _/
+ _/_/_/_/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/          _/      _/  _/    _/
+*/
+
+#include<bits/stdc++.h>
+#include<math.h>
+#define RED_BULL        ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define int             long long
+#define test            int t; cin>>t; while(t--)
+#define vi              vector<int>
+#define vc              vector<char>
+#define viip            vector< pair<int, int>>
+#define vcip            vector< pair<char, int>>
+#define pb              push_back
+#define mp              make_pair
+#define ff              first
+#define ss              second
+#define umap            unordered_map<int, int>
+#define uset            unordered_set<int>  
+#define Ceil(a, b)      (1 + (a - 1)/b)
+#define lcm(a, b)       a*b/__gcd(a, b)
+#define input(arr)      int n; cin>>n; int arr[n]; for(int i=0; i<n; i++) {cin>>arr[i];}
+#define f(i, n)         for(int i=0; i<n; i++)
+#define rf(i, n)        for(int i=n-1; i>=0; i--)
+#define OK              if(ok){cout<<"YES"<<endl;} else{cout<<"NO"<<endl;}
+#define Ok              if(ok){cout<<"Yes"<<endl;} else{cout<<"No"<<endl;}
+#define mod             1000000007
+#define endl "\n"
+using namespace std;
+//*************************************************************************************************
+
+void solve()
+{
+    
+}
+
+int32_t main()
+{
+   RED_BULL
+#ifndef ONLINE_JUDGE
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+#endif
+
+    test
+    {
+        solve();
+    }
+    return 0;
+}
+
+
+
+//******************************************************************************
+// Using long long takes twice more time than using int. That's almost half time of solution required.
+// pass parameters using & otherwise fuction need to read array data every time.
+//ctrl + / to make comments
+//#ifndef ONLINE_JUDGE
+//  freopen("input.txt", "r", stdin);
+//  freopen("output.txt", "w", stdout);
+//#endif
+
+// floor(2.3) = 2;  floor(-2.3) = -3;
+// ceil(float(2.3)) = 3;  ceil(float(-2.3)) = -2;
+
+// add a substring into string => s.insert(pos, string)
+// add a char into string => s.insert(pos, num of times char, char);
+// remove a substring from a string => s.erase(starting pos, ending pos);
+
+// vector<tuple<int, float, char>> vec; vec.pb(make_tuple(2, 3,0, 'a'));  cout << get<0>(vec[0]) << get<2>(vec[0]); = 2 a
+
+// to check if current number is pow of 2 => if(n&(n-1) == 0) true
+// map[a[i]]++,  map.insert({2, 3});(only one at a time), map[2] = 3, 
+
+// gcd = __gcd(a, b);
+// lcm = a*b/__gcd(a, b);
+
+// (cout<<) left shift 5<<1 (0101)->(1010) = 10
+// (cin>>) right shift 10>>1 (1010)->(0101) = 5 (shift 10 by 1 bit)
+// 10>>3 (1010)->(0001) = 1 (shift 10 by 3 bit)
+// 1<<i => 1<<3 => pow(2, 3) = 8
+// __lg() -> to find power of two. __lg(7) = 2, __lg(8) = 3, __lg(9) = 3, (1<<__lg(3)) = 8.
+
+// floor(3.2) = 3, floor(-3.2) = -4
+// int temp = ceil((long double(n)));,    ceil(3.2) = 4, ceil(-3.2) = -3
+//getchar() - uses for no extra comments in output section
+//toupper() - converts a string in uppercase
+//tolower()
+// delete a number in set - S.erase(S.find(n));
+// (3, 6, 10, 12, 15)
+// lower_bound((arr.begin(), arr.end(), 11)-arr.begin()) -> 3
+// lower_bound((arr.begin(), arr.end(), 12)-arr.begin()) -> 3
+// upper_bound((arr.begin(), arr.end(), 11)-arr.begin()) -> 3
+// upper_bound((arr.begin(), arr.end(), 12)-arr.begin()) -> 4
+// *lower_bound(arr.begin(), arr.end(), 11) -> 12
+// *lower_bound(arr.begin(), arr.end(), 12) -> 12
+// *upper_bound(arr.begin(), arr.end(), 11) -> 12
+// *upper_bound(arr.begin(), arr.end(), 12) -> 15
+
+//shift+f6+enter - to change a word everywhere
+//stringstream - to find number of words in a string or to find frequency of words
+//s.substr(1, 3) - geeks - eek
+//*max_element(v+2, v+4) - to find max element in an array
+//*min_element
+//__gcd(2, 10) - to find greatest common devisor, doesn't support float or double
+//count(a, a+n, k) - to find frequency of k or frequency of a char in string in an array or in vector
+//s = 'aaaaa', a[2]++, s = aabaa
+//compare() - to campare to string's size
+//__builtin_popcountll(n) - number of bit 1 in n
+//__builtin_ctzll(n) - number of bit 0 after last 1
+
+// float f = (float)n/k;  cout << fixed << setprecision(2) << f;
+
+//log(n) - to find digits in binary repersatation, returns float value
+//floor(1.3) - 3, floor(-1.2) - -2
